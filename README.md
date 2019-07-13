@@ -339,3 +339,4 @@ public:
 
 ```
 11.  所有的主类中都应有一个 public 变量 lastOperateStatus 来指示上一次操作的状态（操作是否出错等）（这对技术人员有用，对玩家影响不大，建议取消）
+12.  使用DBG宏，方便后期查找bug，release的时候DISABLE_DBG
