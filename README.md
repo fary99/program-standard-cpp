@@ -287,8 +287,8 @@ for(int x = 0; x <= 10; x++)
   * 如何做这个实验，描述实验步骤（只需要下载程序就能肉眼观测到的简单小实验例如blink，这步可以不写）（不能使用中文）
   * @n 实验现象是什么（不能使用中文）
   *
-  * Copyright   [DFRobot](http://www.dfrobot.com), 2016
-  * Copyright   GNU Lesser General Public License
+  * Copyright   Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+  * License     The MIT License (MIT)
   *
   * version  V1.0
   * date  2017-10-9
@@ -313,7 +313,7 @@ typedef struct {
   uint8_t   trig: 1;
   uint8_t   reversed: 2;
   uint8_t   mode: 2;
-} sRegConfig_t;
+}__attribute__ ((packed)) sRegConfig_t;
 
 // .cpp 文件中的使用
 
@@ -336,7 +336,7 @@ void DFRobot_Module::setPowerOn()
 ```
 8. 代码功能设置合理，初级 demo（小白用户上手测试文件）用户体验好，中高级 demo （非小白用户）用户体验尽量好
 9. 代码简洁精炼，易于升级维护，不是技术难度越高越好，而是以用户用起来简单功能容易上手、有深入功能、api用户体验设计非常好为核心
-10. 所有的类必须逻辑与接口实现分离，接口的外设类需由用户传入，不允许直接使用 Wire，SPI 等类（不强制要求，各个平台Wire SPI实现有差异，王辉个人认为Wire可以分离，SPI不分离） <br>
+10. 所有的类必须逻辑与接口实现分离，接口的外设类需由用户传入，不允许直接使用 Wire，SPI 等类 <br>
 例：
 ```cpp
 
@@ -348,5 +348,4 @@ public:
 }
 
 ```
-11.  所有的主类中都应有一个 public 变量 lastOperateStatus 来指示上一次操作的状态（操作是否出错等）（这对技术人员有用，对玩家影响不大，建议取消）
-12.  使用DBG宏，方便后期查找bug，release的时候DISABLE_DBG
+12.  使用DBG宏，方便后期查找bug，release的时候屏蔽掉ENABLE_DBG
