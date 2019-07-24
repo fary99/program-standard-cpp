@@ -310,17 +310,18 @@ for(int x = 0; x <= 10; x++)
   * 如何做这个实验，描述实验步骤（只需要下载程序就能肉眼观测到的简单小实验例如blink，这步可以不写）（不能使用中文）
   * @n 实验现象是什么（不能使用中文）
   *
-  * Copyright   Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
-  * License     The MIT License (MIT)
-  *
-  * version  V1.0
-  * date  2017-10-9
-  */
-  ```
+ * @copyright   Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+ * @licence     The MIT License (MIT)
+ * @author      Alexander(ouki.wang@dfrobot.com)
+ * @version  V1.0
+ * @date  2019-07-16
+ * @get from https://www.dfrobot.com
+ * @url https://github.com/DFRobot/DFRobot_PAJ7620U2  */
+```
 
 ## 高质量封库细节
 
-1. 兼容性好（兼容 uno, leonardo, mega2560, esp8266, mpython，microbit)
+1. 兼容性好（兼容 uno, leonardo, mega2560, esp8266, mpython/esp32，micro:bit)
 2. 兼容旧版 arduino V1.0.5（不强制，但是要做这个测试，能兼容则一定要兼容）
 3. 与其他库兼容好，参考[变量及函数命名](#变量及函数命名)
 4. 库和 demo 中的便于理解的注释充足
