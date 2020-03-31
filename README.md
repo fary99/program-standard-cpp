@@ -36,8 +36,8 @@ C语言 Arduino封库编程规范 <br>
 
 ## 参考库
 
-https://github.com/DFRobot/DFRobot_BMP280 <br>
-https://github.com/DFRobot/DFRobot_BNO055 <br>
+https://github.com/cdjq/DFRobot_Sensor <br>
+https://github.com/DFRobot/DFRobot_PAJ7620U2 <br>
 
 ## 变量及函数命名
 
